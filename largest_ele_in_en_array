@@ -1,0 +1,26 @@
+
+#include <iostream>
+
+using namespace std;
+
+int lar(int arr[],int n)
+{
+    int lar=arr[0];
+    for(int i=1;i<n;i++)
+    {
+        if(arr[i]>lar)
+        {
+            lar=arr[i];
+        }
+    }
+    return lar;
+}
+int main()
+{
+   int arr[]={2,3,41,5};
+   int n = sizeof(arr)/sizeof(arr[0]);
+   cout<<"largest ele is "<<lar(arr,n);
+}
+
+o/p:
+largest arr is 41
